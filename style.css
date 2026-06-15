@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border:1px solid #ccc;
+}
+
+h1{
+    text-align:center;
+    color:#002060;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    margin-bottom:20px;
+}
+
+.section-title{
+    background:#002060;
+    color:white;
+    padding:10px;
+    margin-top:20px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.grid-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.grid-3{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:8px;
+    border:1px solid #999;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+table th,
+table td{
+    border:1px solid #999;
+    padding:8px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#002060;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#003399;
+}
+
+@media(max-width:768px){
+
+.grid-2,
+.grid-3{
+    grid-template-columns:1fr;
+}
+
+}
